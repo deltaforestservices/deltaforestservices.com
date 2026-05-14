@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delta Forest Services LLC | Forest Stand Improvement & Invasive Species Control | Vermont</title>
+  <meta name="description" content="Delta Forest Services LLC offers forest stand improvement, invasive plant control, low-impact timber harvesting, and excavation services in Vermont. Owned and operated by Jeff Dacey, Wildlife Ecologist." />
+  <meta name="keywords" content="forest stand improvement Vermont, invasive species control Vermont, timber harvesting Vermont, forest management Vermont, invasive plant removal Vermont, crop tree release, mast tree release, girdling, Springfield Vermont forestry" />
+  <meta name="author" content="Jeff Dacey, Delta Forest Services LLC" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.deltaforestservices.com/" />
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Delta Forest Services LLC | Vermont Forest Management" />
+  <meta property="og:description" content="Forest stand improvement, invasive species control, low-impact timber harvesting, and excavation services in Vermont. Owned and operated by Jeff Dacey, Wildlife Ecologist." />
+  <meta property="og:url" content="https://www.deltaforestservices.com/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Structured Data: Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Delta Forest Services LLC",
+    "description": "Forest stand improvement, invasive species control, low-impact timber harvesting, and excavation services in Vermont.",
+    "url": "https://www.deltaforestservices.com/",
+    "telephone": "+18023800041",
+    "email": "deltaforestservices@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Springfield",
+      "addressRegion": "VT",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "Vermont"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Jeff Dacey",
+      "jobTitle": "Owner & Forest Manager",
+      "alumniOf": "University of Maine"
+    },
+    "hasCredential": "VT Pesticide Applicator License: 1729-5530",
+    "serviceType": [
+      "Forest Stand Improvement",
+      "Invasive Plant Control",
+      "Low-Impact Timber Harvesting",
+      "Excavation",
+      "Crop Tree Release",
+      "Mast Tree Release",
+      "Girdling",
+      "Patch Cuts"
+    ],
+    "sameAs": []
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cormorant:ital,wght@0,400;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --forest-dark:   #2a3828;
+      --forest-mid:    #3d5238;
+      --forest-muted:  #5a7055;
+      --cream:         #f0ebe1;
+      --cream-light:   #f7f3ec;
+      --parchment:     #e8e0d0;
+      --text-dark:     #1e2a1c;
+      --text-body:     #3a3a35;
+      --text-muted:    #6b6b60;
+      --white:         #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      color: var(--text-body);
+      background: var(--cream-light);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 72px;
+      background: rgba(30, 42, 28, 0.88);
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-logo {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+
+    .nav-links a:hover { opacity: 1; }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 80px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('Nice_maple_woods.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Dark gradient overlay — top bar dark, middle open, bottom vignette */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom,
+          rgba(20,30,18,0.55) 0%,
+          rgba(20,30,18,0.15) 35%,
+          rgba(20,30,18,0.10) 60%,
+          rgba(20,30,18,0.45) 100%
+        );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 64px;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,1);
+      text-shadow: 0 1px 8px rgba(0,0,0,0.6), 0 0px 2px rgba(0,0,0,0.8);
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(4rem, 8vw, 7rem);
+      line-height: 1.0;
+      color: var(--white);
+      margin-bottom: 28px;
+    }
+
+    .hero-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      color: rgba(255,255,255,0.88);
+    }
+
+    /* Placeholder notice — remove when real image is placed */
+    .img-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      pointer-events: none;
+    }
+
+    /* ── ABOUT ── */
+    #about {
+      background: var(--cream-light);
+      padding: 120px 0;
+    }
+
+    .about-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 64px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .about-photos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .about-photo-main {
+      overflow: hidden;
+    }
+
+    .about-photo-main img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .about-photo-secondary {
+      overflow: hidden;
+      margin-top: 48px;
+    }
+
+    .about-photo-secondary img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .about-text { padding-top: 8px; }
+
+    .section-label {
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--forest-muted);
+      margin-bottom: 20px;
+    }
+
+    .about-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      line-height: 1.18;
+      color: var(--text-dark);
+      margin-bottom: 32px;
+    }
+
+    .about-quote {
+      border-left: 2px solid var(--parchment);
+      padding-left: 24px;
+      margin-bottom: 28px;
+    }
+
+    .about-quote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: var(--text-body);
+    }
+
+    .about-body p {
+      font-size: 0.92rem;
+      line-height: 1.85;
+      color: var(--text-body);
+      margin-bottom: 16px;
+    }
+
+    /* ── SERVICES ── */
+    #services {
+      background: var(--forest-dark);
+      padding: 100px 0;
+    }
+
+    .services-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 64px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px 80px;
+    }
+
+    .service-card {}
+
+    .service-photo {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--forest-mid);
+      margin-bottom: 28px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .service-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-photo-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .service-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+
+    .service-desc {
+      font-size: 0.85rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 20px;
+    }
+
+    .service-list {
+      list-style: none;
+    }
+
+    .service-list li {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.55);
+      padding: 8px 0 8px 1.4em;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      letter-spacing: 0.01em;
+      text-indent: -1.4em;
+    }
+
+    .service-list li::before {
+      content: '—  ';
+      color: rgba(255,255,255,0.3);
+    }
+
+    /* ── WORK ── */
+    #work {
+      background: var(--cream);
+      padding: 100px 0;
+    }
+
+    .work-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 64px;
+    }
+
+    .work-header { margin-bottom: 56px; }
+
+    .work-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      color: var(--text-dark);
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4px;
+    }
+
+    .work-grid .work-photo:nth-child(4) {
+      grid-column: 1 / 2;
+      grid-row: 2;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .work-grid .work-photo:nth-child(5) {
+      grid-column: 2 / 3;
+      grid-row: 2;
+      width: 100%;
+    }
+
+    .work-photo {
+      aspect-ratio: 4/3;
+      background: var(--parchment);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .work-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .work-photo:hover img { transform: scale(1.04); }
+
+    .work-photo-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      background: var(--parchment);
+    }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--cream-light);
+      padding: 120px 0;
+    }
+
+    .contact-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 64px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: start;
+    }
+
+    .contact-left {}
+
+    .contact-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.15;
+      color: var(--text-dark);
+      margin-bottom: 28px;
+    }
+
+    .contact-intro {
+      font-size: 0.88rem;
+      line-height: 1.9;
+      color: var(--text-muted);
+      margin-bottom: 56px;
+      max-width: 380px;
+    }
+
+    .contact-items { list-style: none; }
+
+    .contact-item {
+      padding: 20px 0;
+      border-top: 1px solid var(--parchment);
+    }
+
+    .contact-item:last-child { border-bottom: 1px solid var(--parchment); }
+
+    .contact-item-label {
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--forest-muted);
+      margin-bottom: 6px;
+    }
+
+    .contact-item-value {
+      font-size: 1rem;
+      color: var(--text-dark);
+      font-weight: 300;
+    }
+
+    .contact-item-value a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--parchment);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .contact-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .contact-photo-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--forest-dark);
+      padding: 32px 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    footer p {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 0 24px; }
+      .nav-links { gap: 24px; }
+      .about-inner, .contact-inner { grid-template-columns: 1fr; gap: 48px; padding: 0 32px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .services-inner, .work-inner { padding: 0 32px; }
+      .work-grid { grid-template-columns: 1fr 1fr; }
+      .hero-content { padding: 0 32px; }
+      footer { flex-direction: column; gap: 8px; padding: 28px 32px; }
+    }
+
+    @media (max-width: 600px) {
+      .work-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo"><img src="logo_icon_only.png" alt="Delta Forest Services" style="height: 52px; width: auto; filter: invert(1); display: block;" />
+          <span style="font-family: 'Jost', sans-serif; font-weight: 300; font-size: 0.9rem; color: white; letter-spacing: 0.04em; white-space: nowrap;">Delta Forest Services LLC</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <!-- Replace the background-image URL in CSS with your forest photo -->
+
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        Forest Stand Improvement &amp; Invasive Species Control<br>Vermont
+      </div>
+      <h1 class="hero-title">Delta Forest<br>Services LLC</h1>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-photos">
+        <div class="about-photo-main">
+          <img src="Jeff_w_lynx.JPG" alt="Jeff Dacey holding a Canada lynx during U.S. Forest Service wildlife research in Montana" />
+        </div>
+        <div class="about-photo-secondary">
+          <img src="Cutting_timber.jpg" alt="Jeff Dacey felling a large tree with chainsaw during low-impact timber harvest in Vermont" />
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">About Jeff Dacey and Delta Forest Services</p>
+        <div class="about-body">
+          <p>Jeff Dacey holds a B.Sc. in Wildlife Ecology from the University of Maine and spent years working in some of North America's most demanding wild landscapes — radio-collaring and tracking Canada lynx in Colorado and Montana, conducting wildlife surveys and cutting trees in the interior of Alaska, working in habitat management across the West. A love for the forest and where he grew up brought him back to Vermont.</p>
+          <p>That scientific foundation and a practical working knowledge of forestry shapes everything he does in Vermont's forests today. He understands that a well-managed forest has to balance many things at once: timber value, wildlife habitat, ecosystem health, and the recreational and aesthetic qualities that make a piece of land worth spending time in.</p>
+          <p>The idea to start a business came while working in Delta Junction, Alaska and after working in Vermont for a few years, the desire to build something new from the ground up only grew. After completing the Forest Business School Six-Month Essentials program and additional business classes, he had the foundation to do it — and launched Delta Forest Services to bring that combination of ecological knowledge and practical skill to Vermont landowners.</p>
+          <p>Delta Forest Services is part of an informal network of working lands professionals who work independently but can team up to tackle larger projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-inner">
+      <div style="margin-bottom: 56px;">
+        <p class="section-label" style="color: rgba(255,255,255,0.5);">What We Do</p>
+        <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(2.2rem, 4vw, 3.2rem); color: white;">Services for Your Forest</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-photo">
+            <img src="Tearing_out_invasive_shrubs.jpeg" alt="Mechanical invasive plant removal using mini-excavator in Vermont" />
+          </div>
+          <h3 class="service-title">Invasive Plant Control</h3>
+          <p class="service-desc">Mechanical and chemical methods tailored to the species, scale, and conditions of your land.</p>
+          <ul class="service-list">
+            <li>Uprooting plants — hand pulling small stems to ripping out invasive shrubs with the mini-excavator</li>
+            <li>Repeated cutting to exhaust root systems as plants resprout</li>
+            <li>Cut-stump treatment with herbicide</li>
+            <li>Backpack spraying for light to moderately infested areas</li>
+            <li>Hydro-spraying with truck-mounted skid sprayer for heavy infestations</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-photo">
+            <img src="IMG_4319.JPG" alt="Vermont forest stand after timber stand improvement — birch regeneration in winter" />
+          </div>
+          <h3 class="service-title">Forest Stand Improvement</h3>
+          <p class="service-desc">Improving species composition, structure, and long-term value — for wildlife, timber, and the health of the forest itself.</p>
+          <ul class="service-list">
+            <li>Girdling — killing low quality trees to retain vertical structure and provide habitat for bats and birds</li>
+            <li>Mast-tree release — giving hard mast trees (oaks, hickories) and soft mast trees (cherry, apple, serviceberry) an advantage for their value to wildlife</li>
+            <li>Crop-tree release — improving acceptable growing stock to increase the timber value of a forest</li>
+            <li>Patch cuts — creating early-successional habitat or view clearing</li>
+            <li>Timber pruning — pruning lower branches to create higher value logs at harvest</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-photo">
+            <img src="New_log_landing.jpeg" alt="Mini-excavator building a log landing for forest access in Vermont" />
+          </div>
+          <h3 class="service-title">Excavation</h3>
+          <p class="service-desc">Using a mini-excavator to build and repair the infrastructure that makes land management possible.</p>
+          <ul class="service-list">
+            <li>Forest trail repair and AMP remediation</li>
+            <li>Log landing installation</li>
+            <li>Building forest roads</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-photo">
+            <img src="Forwarder.jpg" alt="Forwarder used for low-impact timber harvesting in Vermont woodlot" />
+          </div>
+          <h3 class="service-title">Low-Impact Timber Harvesting</h3>
+          <p class="service-desc">Small-scale, careful harvesting that keeps the forest healthy and works within NRCS programs where applicable.</p>
+          <ul class="service-list">
+            <li>Ash salvage</li>
+            <li>Harvesting small woodlots</li>
+            <li>Combining harvest with NRCS crop- and mast-tree release for economical harvest of low-quality wood</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="work-inner">
+      <div class="work-header">
+        <p class="section-label">Work in the Field</p>
+        <h2 class="work-heading">Recent Projects</h2>
+      </div>
+      <div class="work-grid">
+        <div class="work-photo">
+          <img src="Mechanical_removal_before.jpeg" alt="Before mechanical invasive shrub removal — dense shrub mass on Vermont pond edge" />
+        </div>
+        <div class="work-photo">
+          <img src="Mechanical_removal_after.jpeg" alt="After mechanical invasive shrub removal — cleared Vermont pond edge with mini-excavator" />
+        </div>
+        <div class="work-photo">
+          <img src="Patch_cut.jpeg" alt="Patch cut result creating early successional habitat in Vermont forest" />
+        </div>
+        <div class="work-photo">
+          <img src="Girdling.jpg" alt="Girdling a low-quality tree to improve forest stand structure and wildlife habitat" />
+        </div>
+        <div class="work-photo">
+          <img src="Cut_stump_treatment.jpeg" alt="Cut stump herbicide treatment for invasive plant control in Vermont" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <div style="margin-bottom: 36px;">
+          <img src="New_Logo_with_Name.png" alt="Delta Forest Services logo" style="height: 140px; width: auto; opacity: 0.85;" />
+        </div>
+        <p class="section-label">Get in Touch</p>
+        <h2 class="contact-heading">Let's talk about<br>your forest</h2>
+        <p class="contact-intro">Whether you're dealing with a barberry problem, want to improve the wildlife value of your woodlot, or simply want a knowledgeable set of eyes on your property, Jeff is glad to talk through what's possible. If we can't tackle a project you have in mind, we've got friends, family and former coworkers in the field and will happily point you to any of them who would best suit your management goals.</p>
+        <ul class="contact-items">
+          <li class="contact-item">
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-value"><a href="tel:8023800041">(802) 380-0041</a></div>
+          </li>
+          <li class="contact-item">
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value"><a href="mailto:deltaforestservices@gmail.com">deltaforestservices@gmail.com</a></div>
+          </li>
+          <li class="contact-item">
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-value">Springfield, Vermont</div>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-photo">
+        <img src="Nice_maple_woods.jpeg" alt="Vermont maple forest in autumn — Delta Forest Services service area" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="New_Logo_with_Name.png" alt="Delta Forest Services" style="height: 36px; width: auto; filter: invert(1); opacity: 0.5;" />
+    <p>© 2025 Delta Forest Services LLC</p>
+    <p>Vermont</p>
+  </footer>
+
+</body>
+</html>
